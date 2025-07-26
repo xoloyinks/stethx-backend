@@ -19,7 +19,7 @@ const corsOptions = {
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
     // In production, use specific origins instead of '*'
-    const allowedOrigins = ['http://localhost:3000'];
+    const allowedOrigins = ['http://localhost:3000', "https://stethx.vercel.app"];
     if (allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
